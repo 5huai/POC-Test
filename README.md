@@ -10,3 +10,8 @@ Php: seacms 6.45 代码执行漏洞,https://github.com/jiangsir404/PHP-code-audi
 Java：CVE-2019-9615 OFCMS SQL注入漏洞，https://lanvnal.com/2020/03/15/ofcms-cve-2019-9615-fu-xian/
 
 Php：CVE-2018-14961 ZZCMS 8.3 前台SQL 注入漏洞，http://keac.club/2020/02/02/CVE-2018-14961/
+
+### XXE漏洞案例
+Java：CVE-2018-15531，JavaMelody 组件 XXE 漏洞，https://paper.seebug.org/705/
+
+Php：phpshe v1.7 XXE 漏洞，https://www.sohu.com/a/307805554_354899
