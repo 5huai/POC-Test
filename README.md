@@ -20,3 +20,13 @@ Php：phpshe v1.7 XXE 漏洞，https://www.sohu.com/a/307805554_354899
 Java：Jetty6.x test页面反射型XSS漏洞，https://www.exploit-db.com/exploits/33564
 
 Php：BlueCMS V1.6 反射型XSS漏洞，http://wjlshare.com/archives/1473#XSS
+
+### 文件上传漏洞案例
+Java: Weblogic 任意文件上传漏洞（CVE-2018-2894）, https://paper.seebug.org/647/
+
+Php：禅道 <= 12.4.2 后台文件上传漏洞， https://www.windylh.com/2020/10/28/CNVD-C-2020-121325%EF%BC%9A%E7%A6%85%E9%81%93%E5%90%8E%E5%8F%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E4%B8%8E%E5%A4%8D%E7%8E%B0/
+
+### 文件下载漏洞案例
+Java：Apache Flink 任意文件下载漏洞(CVE-2020-17519),https://www.anquanke.com/post/id/228507#h3-8
+
+Php：XYHCMS V3.5任意文件下载漏洞，http://itren.xiaolee.net/p/2335042.html
